@@ -1,0 +1,113 @@
+body {
+  background-color: #0a0a0a;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+#biosIntro {
+  background-color: #000;
+  color: #0f0;
+  font-size: 1.2em;
+  padding: 100px;
+  text-align: left;
+}
+
+.container {
+  animation: fadeIn 1s ease-in;
+}
+
+header, footer {
+  background-color: #111;
+  border: 2px solid #0f0;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #222;
+  padding: 10px;
+  border-bottom: 2px dashed #0f0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+}
+
+nav a {
+  color: #0f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  border-bottom: 1px dotted #0f0;
+}
+
+img {
+  width: 200px;
+  margin: 10px;
+  border: 2px solid #0f0;
+  box-shadow: 0 0 10px #0f0;
+}
+
+footer {
+  border-top: 2px solid #0f0;
+  padding: 10px;
+}
+
+.console {
+  background-color: #000;
+  color: #0f0;
+  font-family: 'Courier New', monospace;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #0f0;
+}
+
+.glitch {
+  position: relative;
+  color: #0f0;
+  font-size: 2em;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #0f0;
+  clip: rect(0, 900px, 0, 0);
+  animation: glitch 1s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  color: #f0f;
+  animation-delay: 0.3s;
+}
+
+@keyframes glitch {
+  0% { clip: rect(0, 999px, 0, 0); }
+  5% { clip: rect(0, 999px, 999px, 0); }
+  10% { clip: rect(999px, 999px, 999px, 0); }
+  15% { clip: rect(0, 999px, 999px, 0); }
+  20% { clip: rect(999px, 999px, 0, 0); }
+  100% { clip: rect(0, 999px, 0, 0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
