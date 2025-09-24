@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Archivos Guillermo</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Intro tipo BIOS -->
+  <div id="biosIntro">
+    <pre>
+    [GUILLERMO SYSTEM BOOT]
+    Loading Retro Archive...
+    Initializing Limewire Protocol...
+    Accessing Secure Files...
+    </pre>
+  </div>
+
+  <!-- Pantalla principal -->
+  <div class="container" id="contenido" style="display:none;">
+    <header>
+      <h1 class="glitch" data-text="ARCHIVOS GUILLERMO">ARCHIVOS GUILLERMO</h1>
+      <p>Contenido exclusivo tipo Limewire</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#descargas">Descargas</a></li>
+        <li><a href="#bio">Biografía</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="galeria">
+        <h2>🎞️ Galería</h2>
+        <img src="img/eladio1.jpg" alt="Imagen retro 1">
+        <img src="img/eladio2.jpg" alt="Imagen retro 2">
+      </section>
+
+      <section id="descargas">
+        <h2>💾 Descargas</h2>
+        <div class="console">
+          C:\Retro\Guillermo> download Canción_1.mp3<br>
+          Descargando... ███████████████████ 100%<br>
+          C:\Retro\Guillermo> download Video_2.mp4<br>
+          Descargando... ███████████████████ 100%<br>
+        </div>
+        <ul>
+          <li><a href="descargas/cancion1.mp3" download onclick="playClick()">Descargar Canción 1</a></li>
+          <li><a href="descargas/video2.mp4" download onclick="playClick()">Descargar Video 2</a></li>
+        </ul>
+      </section>
+
+      <section id="bio">
+        <h2>📁 Biografía</h2>
+        <p>Guillermo es un creador interdisciplinario que mezcla física, diseño y nostalgia digital.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Guillermo. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <!-- Sonido de clic -->
+  <audio id="clickSound" src="media/click.mp3" preload="auto"></audio>
+</body>
+</html>
